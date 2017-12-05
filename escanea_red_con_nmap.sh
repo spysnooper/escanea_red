@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nmap $1 -n -sP | grep report | awk '{print $5}'
+sudo nmap -sn -PU $1 | grep report | awk '{print $5}'
